@@ -1,15 +1,15 @@
 package DataStructure.Map;
 
 public class Node<T> {
-	int key;
+	T key;
 	T value;
 	Node next;
-	public Node(int key,T value,Node next){
+	public Node(T key,T value,Node next){
 		this.value=value;
 		this.next=next;
 		this.key=key;
 	}
-	public Node(int key,T value){
+	public Node(T key,T value){
 		this.key=key;
 		this.value=value;
 		this.next=null;

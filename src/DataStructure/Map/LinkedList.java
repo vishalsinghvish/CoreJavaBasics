@@ -4,8 +4,8 @@ public class LinkedList<T> {
 	Node head;
 	
 	
-	public void insert(int key,T data){
-		Node newNode=new Node(key,data);
+	public void insert(T key,T value){
+		Node newNode=new Node(key,value);
 		if(head==null){
 			head=newNode;
 		}else{

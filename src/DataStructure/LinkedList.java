@@ -1,10 +1,9 @@
 package DataStructure;
 
-public class LinkedList<T> {
+public class LinkedList<T extends Comparable<T>> {
 	Node head;
-	
-	
 	public void insert(T data){
+		data.compareTo(data);
 		Node newNode=new Node(data);
 		if(head==null){
 			head=newNode;
